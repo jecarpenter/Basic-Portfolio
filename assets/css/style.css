@@ -2,20 +2,232 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none
+    text-decoration: none;
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("assets/images/concrete_seamless.png");
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Header start */
 .header{
-    width: 100%;
-    height: 80px;
+    width: 100vw;
+    height: 100px;
     display: block;
-    background-color: black
+    background-color: #ffffff;
+    border-bottom-style: solid; border-color: #cccccc; border-bottom-width: 2px; 
 }
 
 .inner_header{
-    width: 1000px;
+    width: 1020px;
     height: 100%;
     display: block;
     margin: 0 auto;
-    background-color: #4aaaa5
 }
+
+.myname {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.myname h1{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: 1000;
+    text-align: center;
+    background-color: #4aaaa5;
+    padding: 20px
+}
+
+.navigation {
+    float: right;
+    height: 100%
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px
+}
+
+.navigation a li:hover{
+    color: #4aaaa5;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: #777777;
+    font-weight: 600;
+}
+
+.navigation a:last-child{
+    padding-right: 20px;
+}
+/* Header end */
+
+/* Footer start */
+.footer {
+    width: 100vw;
+    display: block; 
+    overflow: hidden;
+    padding: 30px 0;
+    box-sizing: border-box;
+    background-color: #666666;
+    border-top: solid; border-color: #4aaaa5; border-width: 8px;
+    margin-top: auto;
+}
+
+.innter_footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.copyright {
+    text-align: center; color: #cccccc
+}
+/* Footer end */
+
+/* container start */
+div.container {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 960px;
+    margin: 50px auto;
+    border: solid 2px #dddddd;
+}
+
+#about_me {
+    color: #4aaaa5;
+    border-bottom: solid #dddddd 3px;
+    padding: 22px;
+    padding-left: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main_text {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    padding: 15px;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+#photo {
+    float: left;
+    width: 250px;
+    padding: 20px;
+
+}
+
+/* container end */
+
+/* contact start */
+
+input[type=text], select, textarea {
+    width: 960px; 
+    padding: 12px;  
+    border: 1px solid #dddddd; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #188681;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-color: #dddddd;
+  }
+
+  label {
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      color: #777777
+  }
+
+  #contact_head {
+      color: #4aaaa5;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: solid 3px #dddddd;
+      padding: 20px;
+      padding-left: 0px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+/* contact end */
+
+/* portfolio begin */
+
+#portfolio_head {
+    color: #4aaaa5;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: solid 3px #dddddd;
+    padding: 20px;
+    padding-left: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.gallery {
+    margin: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+.desc {
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+/* portfolio end */
